@@ -1,0 +1,2 @@
+rootProject.name='AndroidRealmDatabase'
+include ':app'
