@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import io.realm.Realm;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText id, name, age;
     private Button add, update, read, delete;
@@ -38,5 +36,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
+        switch (v.getId()) {
+            case R.id.btnAdd:
+                addUser();
+                break;
+            case R.id.btnRead:
+                readUserRecords();
+                break;
+            case R.id.btnUpdate:
+                updateUserRecords();
+                break;
+            case R.id.btnDelete:
+                deleteUserRecords();
+                break;
+
+        }
+
+    }
+
+    private void addUser() {
+    }
+
+    private void readUserRecords() {
+    }
+
+    private void updateUserRecords() {
+    }
+
+    private void deleteUserRecords() {
     }
 }
