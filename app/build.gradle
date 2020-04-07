@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
 //TODO add the realm plugin here
-
+apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 29
